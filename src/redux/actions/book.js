@@ -1,13 +1,14 @@
 import axios from "axios";
 import { ActionTypes } from "../actionTypes";
+import key from '../../resources/index'
 
 export const fetchBooks = (search) => async (dispatch) => {
-    const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&orderBy=newest&key=AIzaSyC97I0qw_MhTKL3dRmu-RLJQxpydyM5rsI&maxResults=40`);
+    const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&orderBy=newest&key=${key}&maxResults=40`);
     dispatch({ type: ActionTypes.FETCH_BOOKS, payload: response.data.items });
 };
 
 export const fetchBook = (id) => async (dispatch) => {
-    const response = await axios.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyC97I0qw_MhTKL3dRmu-RLJQxpydyM5rsI&maxResults=40`);
+    const response = await axios.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=${key}&maxResults=40`);
     dispatch({ type: ActionTypes.SELECTED_BOOK, payload: response.data });
 };
 

@@ -1,0 +1,24 @@
+{
+    "translation": {
+        "cart": "Cart",
+        "logo": "Store Book Online",
+        "wishList": "Wish List",
+        "account": "Account",
+        "loading": "Loading",
+        "authors": "Authors",
+        "price": "Price",
+        "buy": "BUY",
+        "emptyBooks": "There are no available books",
+        "search": "Search here your book",
+        "title": "Title",
+        "orderSummary": "Order Summary",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "freeCosts": "Free Shipping Costs",
+        "total": "Total",
+        "checkout": "CHECKOUT NOW",
+        "continueShopping": "Continue Shopping",
+        "wishListTitle": "WISH LIST",
+        "shoppingCart": "SHOPPING CART"
+    }
+}

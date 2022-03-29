@@ -33,5 +33,7 @@ React Redux is the official React binding for Redux. It allows React components 
     A folder structure was also created for this purpose.
 
     Redux Thunk middleware allows writing functions with logic inside that can interact with a Redux store's dispatch and getState methods.
+    The good thing about using Redux is that redux has a single state that can only be modified through "actions" (simple JavaScript objects), which are dispatched to the Redux Store. Most other data stores have the state contained within the React components themselves, allowing you to have multiple stores and/or use mutable state.
+    This, in turn, causes the store reducer, a pure function that operates on immutable data, to execute and potentially update state. This process forces unidirectional data flow, which is easier to understand and more deterministic.
 
     Axios is an HTTP client library that allows you to make requests to a certain endpoint, in this case the Google Books api was used to obtain the complete information of books.
